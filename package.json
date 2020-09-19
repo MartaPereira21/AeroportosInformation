@@ -1,5 +1,5 @@
 {
-  "name": "movies",
+  "name": "aeroportos",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -12,13 +12,22 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.0.2",
+    "@angular/cdk": "^10.0.1",
     "@angular/common": "~10.0.2",
     "@angular/compiler": "~10.0.2",
     "@angular/core": "~10.0.2",
     "@angular/forms": "~10.0.2",
+    "@angular/material": "^10.0.1",
     "@angular/platform-browser": "~10.0.2",
     "@angular/platform-browser-dynamic": "~10.0.2",
     "@angular/router": "~10.0.2",
+    "@fortawesome/fontawesome-free": "^5.13.1",
+    "@types/chart.js": "^2.9.22",
+    "angular-bootstrap-md": "^9.3.1",
+    "animate.css": "^4.1.0",
+    "chart.js": "^2.5.0",
+    "hammerjs": "^2.0.8",
+    "mat-select-autocomplete": "^1.3.0",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"

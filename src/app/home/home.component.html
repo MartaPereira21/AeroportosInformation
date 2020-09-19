@@ -1,0 +1,47 @@
+<img src="assets/aeroports.jpg" class="img-fluid" width="9500"  >
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 p-5">
+      <div class="md-form">
+        <input mdbInput [(ngModel)]="country" type="text" id="form1" class="form-control">
+        <label for="form1" class="">Enter a country</label>
+        <button (click)="getAeroports(country)" class="w-100" type="button" mdbBtn color="green" mdbWavesEffect>Search</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div *ngFor="let aeroport of aeroports" class="col-3 p-5">
+      <mdb-card cascade="true" wider="true">
+
+        <mdb-card-body cascade="true" class="text-center">
+          <!--Card content-->
+          <!--Title-->
+          <h4 class="card-title">
+            <strong>{{ aeroport.name }}</strong>
+          </h4>
+          <h5 class="indigo-text">
+            <strong>{{ aeroport.municipality }} -  {{ aeroport.region }}</strong>
+          </h5>
+
+        
+          <mdb-card-text>
+            <img src='{{flag }}' width="200px" width="100px" alt="Flowers in Chania">
+            <p><span>Lat:</span>{{ aeroport.lat }}</p>
+            <p><span>Long:</span>{{ aeroport.lon }}</p>
+          </mdb-card-text>
+
+          <!--Linkedin-->
+        
+         
+          <a target="_blank" class="px-2 icons-sm fb-ic" href='{{ aeroport.wikipedia }}'>
+            <mdb-icon fab icon="wikipedia-w"> </mdb-icon>
+          </a>
+
+        </mdb-card-body>
+        <!--/.Card content-->
+
+      </mdb-card>
+    </div>
+  </div>
+</div>
